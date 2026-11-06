@@ -114,7 +114,12 @@ namespace Ratatoskr
             var seen = new HashSet<long>();
             foreach (var peer in ZNet.instance.GetPeers())
             {
-                if (peer.m_characterID == ZDOID.None) continue;
+                // Between death and respawn the peer has no character; still online.
+                if (peer.m_characterID == ZDOID.None)
+                {
+                    if (Online.ContainsKey(peer.m_uid)) seen.Add(peer.m_uid);
+                    continue;
+                }
                 seen.Add(peer.m_uid);
                 if (!Online.TryGetValue(peer.m_uid, out var st))
                 {
