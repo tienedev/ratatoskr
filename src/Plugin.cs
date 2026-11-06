@@ -10,7 +10,7 @@ namespace Ratatoskr
     {
         public const string Guid = "dev.tiene.ratatoskr";
         public const string Name = "Ratatoskr";
-        public const string Version = "0.2.0";
+        public const string Version = "0.2.1";
 
         private float _nextLearn;
 
