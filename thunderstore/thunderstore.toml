@@ -1,0 +1,30 @@
+[config]
+schemaVersion = "0.0.1"
+
+[package]
+namespace = "tienedev"
+name = "Ratatoskr"
+versionNumber = "0.2.0"
+description = "Server-side plugin: search every chest, chest journal, tombstones, portals, events and play time, as JSON over RCON. Players install nothing."
+websiteUrl = "https://github.com/tienedev/ratatoskr"
+containsNsfwContent = false
+
+[package.dependencies]
+denikson-BepInExPack_Valheim = "5.4.2360"
+Tristan-ValheimRcon = "1.6.3"
+
+[build]
+icon = "./icon.png"
+readme = "../README.md"
+outdir = "../dist"
+
+[[build.copy]]
+source = "../bin/Release/net48/Ratatoskr.dll"
+target = "plugins/Ratatoskr.dll"
+
+[publish]
+repository = "https://thunderstore.io"
+communities = ["valheim"]
+
+[publish.categories]
+valheim = ["mods", "server-side", "utility"]

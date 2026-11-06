@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0" stop-color="#2b3a4a"/><stop offset="1" stop-color="#121a24"/>
+    </radialGradient>
+  </defs>
+  <rect width="256" height="256" rx="36" fill="url(#bg)"/>
+  <!-- Yggdrasil trunk -->
+  <path d="M128 236 L128 60 M128 110 L84 70 M128 90 L170 52 M128 150 L176 118" stroke="#3f5a46" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <circle cx="128" cy="40" r="28" fill="#3f5a46"/>
+  <circle cx="82" cy="64" r="20" fill="#3f5a46"/>
+  <circle cx="176" cy="46" r="20" fill="#3f5a46"/>
+  <!-- squirrel -->
+  <g fill="#d98b3a">
+    <path d="M150 210 C 215 205, 230 140, 200 110 C 180 90, 150 105, 165 130 C 175 150, 200 150, 195 175 C 190 195, 165 200, 150 200 Z"/>
+    <ellipse cx="128" cy="182" rx="30" ry="36"/>
+    <circle cx="112" cy="140" r="22"/>
+    <path d="M100 126 L96 102 L114 120 Z"/>
+    <path d="M120 122 L122 100 L132 124 Z"/>
+    <ellipse cx="110" cy="214" rx="18" ry="8"/>
+  </g>
+  <ellipse cx="124" cy="186" rx="14" ry="22" fill="#f0c58a"/>
+  <circle cx="104" cy="138" r="4" fill="#121a24"/>
+  <circle cx="91" cy="146" r="3" fill="#121a24"/>
+  <!-- message rune -->
+  <rect x="62" y="160" width="34" height="26" rx="4" fill="#e8dcc0" transform="rotate(-12 79 173)"/>
+  <path d="M72 168 L80 178 L88 166" stroke="#7a5a2a" stroke-width="3" fill="none" transform="rotate(-12 79 173)"/>
+</svg>
